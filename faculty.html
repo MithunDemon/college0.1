@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
+    <style>
+
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+       
+         .faculty
+        {
+
+            margin-top: 6%;
+        }
+
+        .rep
+        {
+            margin-top: 33%;
+            width:500px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+        }
+
+
+        .rep:hover
+        {
+            transform: scale(1.1);
+            transition: 1s;
+        }
+
+          .rep1
+        {
+            margin-top: 89%;
+            width:500px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+        }
+
+         .rep1:hover
+        {
+            transform: scale(1.1);
+            transition: 1s;
+        }
+
+
+        .rep2
+        {
+             margin-top: 190%;
+            width:500px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            height: 600px;
+
+
+        }
+
+
+        .sir
+        {
+            margin-left: 11%;
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgba(1, 1, 82, 0.575);
+        }
+
+        .sir2
+        {
+            font-size: 31px;
+        }
+
+        .show
+        {
+            display: none; 
+        }
+        #mam
+        {
+            font-size: 31px;
+        }
+
+        
+
+        @media(max-width:600px)
+        {
+            .faculty
+            {
+        
+                margin-top:22%;
+        
+            
+                
+                
+            }
+
+            .rep{
+                width: 200px;
+                margin-top: 20%;
+            }
+
+            .rep1
+            {
+                  width: 200px;
+                margin-top: 180%;
+            
+            }
+            .rep2
+            {
+                 width: 150px;
+                margin-top: 340%;
+                height: 200px;
+            
+
+            }
+
+            .sir
+            {
+                margin-top: 3px;
+                font-size: 20px;
+            }
+
+            .show
+            {
+                display: block;
+            }
+
+            .sir2
+            {
+                font-size: 13px;
+                margin-top: 20px;
+            }
+
+            #mam
+            {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-dark bg-dark fixed-top " style="height: 100px;margin-bottom: 200px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="margin-left: 40px;" href="#">BCA Tech Hub - J H Patel College</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Smart Campus</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="about.html">About Us</a>
+                            <a class="nav-link" href="faculty.html">Faculty</a>
+                            <a class="nav-link" href="admissions,html">Admissions</a>
+                            <a class="nav-link" href="examination.html">Examination</a>
+                            <a class="nav-link" href="Placements.html">Placements</a>
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Notices
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Student Corner</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="timetable.html">Time Table</a></li>
+                                <li><a class="dropdown-item" href="syllabus.html">Syllabus</a></li>
+                                <li><a class="dropdown-item" href="result.html">Results</a></li>
+                                <li><a class="dropdown-item" href="campuslife.html">Campus Life</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="library.html">Library</a></li>
+                                <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+                                <li><a class="dropdown-item" href="event.html">Events</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    
+
+       <div class="card text-bg-dark faculty" >
+        <img src="photo11.jpeg" class="card-img" alt="...">
+
+        <div class="card-img-overlay" style="padding-top: 100px;">
+            <img src="img10.jpeg" alt=""  class="rep">
+            <p class="sir">Mr.Mustaf sir</p>
+
+            <p style="color: black;" class="sir2">Mr. Mustaf Sir is a highly talented and dedicated professional who serves as the Secretary of our college. He is well known for his strong leadership qualities, administrative skills, and commitment to academic excellence. In addition to his role as secretary, he is an excellent coder with deep knowledge of programming and modern technologies. His guidance and vision have played an important role in the growth of the institution. He always encourages students and staff to improve their technical skills and professional values. We are proud to have such an inspiring and skilled person as the secretary of our college.</p>
+               </div>
+
+        <img src="photo11.jpeg" class="card-img " alt="...">
+        <div class="card-img-overlay" style="padding-top: 100px;">
+            <img src="photo12.jpeg" alt=""  class="rep1">
+            <p class="sir" >Mr. Kedar Patil Sir</p>
+
+            <p style="color: black;" class="sir2">Head of Department (HOD)
+Mr. Kedar Patil Sir serves as the Head of the Department at our college. He is a dedicated and highly skilled faculty member with strong expertise in programming and software development. He explains concepts in a clear and structured manner, helping students build a strong foundation in coding and technical subjects. His professional approach, discipline, and guidance play an important role in the academic and overall development of students.</p>
+               </div>
+
+        
+        <img src="photo11.jpeg" class="card-img show" alt="..." >
+         <div class="card-img-overlay" style="padding-top: 100px;">
+            <img src="photo13.jpeg" alt=""  class="rep2">
+            <p class="sir">Ms. Jyoti</p>
+
+        <p style="color: black;" id="mam">Ms. Jyoti is the esteemed Principal of our college and a highly accomplished academic professional. She is recognized as an excellent lecturer with strong subject expertise and a clear, effective teaching methodology. Her commitment to academic excellence and student-centered learning has significantly contributed to the growth and reputation of the institution.
+<br>As a Principal, she demonstrates outstanding leadership, integrity, and vision. She consistently motivates faculty members and students to maintain high academic standards, professional ethics, and continuous improvement. Under her guidance, the college has achieved progress in academics, administration, and overall institutional development. The college is proud to have Ms. Jyoti as its Principal and academic leader.</p>
+               </div>
+               <footer class="bg-dark text-light pt-4 mt-5" >
+        <div class="container">
+            <div class="row text-center">
+
+                <!-- College Info -->
+                <div class="col-md-12 mb-3">
+                    <h5 class="text-uppercase">J H Patel College</h5>
+                    <p>
+                        BCA Tech Hub is a dedicated portal for BCA students to access academic
+                        information and college updates.
+                    </p>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="col-md-12 mb-3">
+                    <a href="https://www.instagram.com/jhpatel_college/?hl=en" target="_blank"
+                        class="text-light fs-4 me-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/Jhpatelcollegedvg/" target="_blank" class="text-light fs-4 me-3">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.google.com/search?client=firefox-b-d&q=j+h+patel+college+davangere#"
+                        target="_blank" class="text-light fs-4">
+                        <i class="bi bi-google"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary">
+
+            <!-- Copyright -->
+            <div class="text-center pb-3">
+                © 2026 J H Patel College | BCA Department
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    
+
+
+
+        
+               
+    </div>
+
+     
+    
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+    
+
+    
+</body>
+</html>
