@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Timetable Images</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .upload-box {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    input[type="file"] {
+      margin: 15px 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>📅 College Timetable Upload</h2>
+
+  <div class="upload-box" >
+    <input type="password" placeholder="enter your password" id="pass">
+    <button onclick="check()">check password</button>
+
+
+
+    <div class="show" style="display: none;">
+    <input type="file" id="fileInput1" accept="image/*">
+    <input type="file" id="fileInput2" accept="image/*">
+    <button onclick="removeImage('img1','timetableImage1')">Remove Image</button>
+    <button onclick="removeImage('img2','timetableImage2')">Remove Image</button>
+    </div>
+  </div>
+
+
+<br><br>
+
+<img id="img1" width="300">
+<img id="img2" width="300">
+
+<script>
+function setupImage(inputId, imgId, storageKey) {
+  const input = document.getElementById(inputId);
+  const img = document.getElementById(imgId);
+
+  // Load image after refresh
+  const saved = localStorage.getItem(storageKey);
+  if (saved) img.src = saved;
+
+  input.onchange = () => {
+    const file = input.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      localStorage.setItem(storageKey, reader.result);
+      img.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  };
+}
+
+// Setup multiple images
+setupImage("fileInput1", "img1", "timetableImage1");
+setupImage("fileInput2", "img2", "timetableImage2");
+
+
+function removeImage(imgId,storageKey)
+{
+  document.getElementById(imgId).src="";
+  localStorage.removeItem(storageKey);
+}
+
+
+
+document.addEventListener("DOMContentLoaded",function()
+
+
+{
+
+
+  function check()
+{
+
+
+const password = document.getElementById("pass").value;
+
+
+if(password === "2025")
+{
+  document.querySelectorAll(".show").forEach(el =>{
+    el.style.display="block";
+
+  });
+}
+else{
+  alert("worng");
+}
+}
+
+window.check = check;
+
+
+});
+
+
+
+</script>
+
+    
+
+</body>
+</html>
