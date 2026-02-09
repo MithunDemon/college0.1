@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+
+        body
+        {
+            background:linear-gradient(135deg,#667eea,#764ba2);
+        }
+
+
+.mainimag {
+    
+            width: 300px;
+            height: 300px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+
+        }
+
+        .nanu {
+            background: linear-gradient(135deg,#000000,#0f9b8e);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(100px);
+            -webkit-backdrop-filter: blur(100px);
+            margin: 60px;
+            border-radius: 20px;
+            padding: 30px;
+            
+
+        }
+
+
+        .mainimag2 {
+            margin-top: 50px;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            
+        
+        }
+
+
+        .r1 {
+            margin-left: 45%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+
+
+
+        .r1:hover {
+            transform: scale(1.1);
+            transition: 0.70s;
+
+
+        }
+
+        .r2:hover {
+            transform: scale(1.1);
+            transition: 0.70s;
+
+
+        }
+
+        .r3:hover {
+            transform: scale(1.1);
+            transition: 0.70s;
+
+
+        }
+
+        .r2 {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .r3 {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .r5 {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+
+        .r4 {
+            margin-left: 100%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+
+        .r4:hover {
+            transform: scale(1.1);
+            transition: 0.70s;
+
+
+        }
+
+         @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+         .scroll-img.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+       
+
+       
+
+        .r5:hover {
+            transform: scale(1.1);
+            transition: 0.70s;
+
+
+        }
+
+        .make {
+            margin-left: 20px;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .light {
+            margin-left: 40px;
+            font-size: 24px;
+            
+        }
+
+        .sp
+        {
+            font-size: 50px;
+            color: orange;
+            font-weight: 500;
+
+        }
+        .scroll-img {
+
+            opacity: 0;
+            transform: translateY(100px);
+            transition: all 0.8s ease;
+
+
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+
+        .card-text {
+            animation: fadeIn 3s ease-in forwards;
+            font-size: 30px;
+            color: rgb(0, 0, 24);
+        }
+
+
+
+        
+        .phot {
+
+            border-radius: 20px;
+            background-color: aquamarine;
+        }
+
+        .day {
+            font-size: 40px;
+            margin-left: 10px;
+
+        }
+   
+
+
+
+        @media(max-width:600px) {
+            .mainimag {
+                flex-direction: column;
+                align-items: center;
+
+                width: auto;
+                height: auto;
+
+                padding: 20px;
+
+
+
+            }
+
+
+            .day
+            {
+                font-size: 23px;
+            }
+
+
+            
+
+            .sp
+        {
+            font-size: 30px;
+            
+        }
+        
+
+            .r1 {
+                margin-left: 0;
+                margin: 0;
+
+            }
+
+            .r4 {
+                margin-left: 0;
+            }
+
+            .mainimag2 {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                width: 80%;
+                margin: 20px;
+            }
+
+            .nanu {
+                margin: 20px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+        
+            }
+        }
+
+
+
+
+         </style>
+
+</head>
+
+<body>
+
+
+    
+    <nav class="navbar navbar-dark bg-dark fixed-top " style="height: 100px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="margin-left: 40px;" href="#">BCA Tech Hub - J H Patel College</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Smart Campus</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="about.html">About Us</a>
+                            <a class="nav-link" href="faculty.html">Faculty</a>
+                            <a class="nav-link" href="Admissioms.html">Admissioms</a>
+                            <a class="nav-link" href="Examination.html">Examination</a>
+                            <a class="nav-link" href="Placements.html">Placements</a>
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Notices
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="">Student Corner</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="timetable.html">Time Table</a></li>
+                                <li><a class="dropdown-item" href="syllabus.html">Syllabus</a></li>
+                                <li><a class="dropdown-item" href="campus.html">Campus Life</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="lib.html">Library</a></li>
+                                <li><a class="dropdown-item" href="">Sports</a></li>
+                                <li><a class="dropdown-item" href="event.html">Events</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                       <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>   
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+   
+
+
+
+
+
+
+
+
+   
+    
+
+    <p class="day" style="margin-top: 110px;">Celebrating Tradition and Culture – <span   class="sp" >Ethnic Day</span></p>
+
+
+
+
+     <div class="nanu">
+          <p class="fs-1 day" style="font-size: 60px;padding-top: 30px;text-align: center;color: white;">“Celebrating Culture with Our Respected Staff”</p>
+
+        <div class="mainimag ">
+            <img src="photo6.jpeg" class="img-thumbnail r1 scroll-img" alt="...">
+            <img src="photo7.jpeg" class="img-thumbnail r2 scroll-img" alt="...">
+            <img src="photo8.jpeg" class="img-thumbnail r3 scroll-img" alt="...">
+        </div>
+    </div>
+
+
+     <div class="nanu">
+        
+        <div class="mainimag">
+            <img src="photo.jpeg" class="img-thumbnail r1 scroll-img" alt="...">
+            <img src="photo1.jpeg" class="img-thumbnail r2 scroll-img" alt="...">
+            <img src="photo2.jpeg" class="img-thumbnail r3 scroll-img" alt="...">
+        </div>
+
+         <p class="day" style="color: white;text-align: center;font-size: 24px;padding: 30px;">Ethnic Day is a special and colorful celebration in our college that showcases the rich culture and traditions of India.</p>
+        
+
+
+    </div>
+
+
+         <div class="nanu">
+        
+        <div class="mainimag">
+            <img src="photo3.jpeg" class="img-thumbnail r1 scroll-img" alt="...">
+            <img src="photo4.jpeg" class="img-thumbnail r2 scroll-img" alt="..." style="height: 300px;width: 400px;">
+            <img src="photo5.jpeg" class="img-thumbnail r3 scroll-img" alt="...">
+        </div>
+
+         <p class="day" style="color: white;text-align: center;font-size: 24px;padding: 30px;">The event includes traditional dances, music, cultural performances, and fun activities. Students actively participate and show their talents while learning to respect and appreciate our cultural diversity.
+        
+
+
+    </div>
+    <script>
+        const images = document.querySelectorAll('.scroll-img');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        images.forEach(img => observer.observe(img));
+    </script>
+
+
+<footer class="bg-dark text-light pt-4 mt-5">
+        <div class="container">
+            <div class="row text-center">
+
+                <!-- College Info -->
+                <div class="col-md-12 mb-3">
+                    <h5 class="text-uppercase">J H Patel College</h5>
+                    <p>
+                        BCA Tech Hub is a dedicated portal for BCA students to access academic
+                        information and college updates.
+                    </p>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="col-md-12 mb-3">
+                    <a href="https://www.instagram.com/jhpatel_college/?hl=en" target="_blank"
+                        class="text-light fs-4 me-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/Jhpatelcollegedvg/" target="_blank" class="text-light fs-4 me-3">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.google.com/search?client=firefox-b-d&q=j+h+patel+college+davangere#"
+                        target="_blank" class="text-light fs-4">
+                        <i class="bi bi-google"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary">
+
+            <!-- Copyright -->
+            <div class="text-center pb-3">
+                © 2026 J H Patel College | BCA Department
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
