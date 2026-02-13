@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card-textt {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: show 7.6s forwards;
+        }
+
+       
+
+          .jhp
+        {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+
+
+        @keyframes show {
+            to {
+                opacity: 1;
+                transform: translateY();
+            }
+
+        }
+
+
+        body {
+            background-color: darkblue;
+        }
+
+
+          @media(max-width:600px) {
+          
+              .jhp
+        {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+      }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top " style="height: 100px;">
+        <div class="container-fluid">
+           <img src="jh-patel.jpg" class="img-thumbnail jhp" alt="...">
+            <a class="navbar-brand"  href="#">J H Patel College Davangere</a>
+
+
+
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Smart Campus</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="about.html">About Us</a>
+                            <a class="nav-link" href="faculty.html">Faculty</a>
+                            <a class="nav-link" href="Placements.html">Placements</a>
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Notices
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Student Corner</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="timetable.html">Time Table</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="lib.html">Library</a></li>
+                                <li><a class="dropdown-item" href="#">Sports</a></li>
+                                <li><a class="dropdown-item" href="event.html">Events</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </nav>
+
+
+    <div class="card mb-3"
+        style="margin-top:150px      ;max-width: 1140px;justify-content: center;align-items: center;box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);background-color: #4fc3f7;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="place2.jpeg" class="img-fluid rounded-start" alt="..." style="width: 600px;height: 500px;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 34px;">College Placements – 2025</h5><br>
+                    <p class="card-textt" style="font-size: 20px;"><small class="text-body-secondary">Our college has a
+                            strong placement record and continues to prepare students for successful professional
+                            careers. In the academic year 2025, several students from our institution were successfully
+                            placed in Tata Consultancy Services (TCS), one of India’s leading multinational IT
+                            companies.<br><br>
+                            The placement in TCS reflects the quality of education, technical training, and soft skills
+                            development provided by our college. Through regular skill-development programs, workshops,
+                            and placement training sessions, students were well prepared to meet industry
+                            requirements.<br><br>
+                            We are proud of our students’ achievements and thankful to the placement cell and faculty
+                            members for their continuous guidance and support. These placements motivate future batches
+                            to work hard and achieve their career goals.
+                        </small></p>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div>
+        <img src="pop.png" class="scroll-img" alt="..."
+            style="margin-left: 50px;   border-radius: 8px;   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);       width: 300px;height: 200px;align-items: center;justify-content: center;">
+
+    </div>
+
+
+   
+
+
+
+    <footer class="bg-dark text-light pt-4 mt-5">
+        <div class="container">
+            <div class="row text-center">
+
+                <!-- College Info -->
+                <div class="col-md-12 mb-3">
+                    <h5 class="text-uppercase">J.H.Patel Institute of Management and Technology</h5>
+                    <p>
+                        BCA Tech Hub is a dedicated portal for BCA students to access academic
+                        information and college updates.
+                    </p>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="col-md-12 mb-3 icon">
+                    <a href="https://www.instagram.com/jhpatel_college/?hl=en" target="_blank"
+                        class="text-light fs-4 me-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/Jhpatelcollegedvg/" target="_blank" class="text-light fs-4 me-3">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.google.com/search?client=firefox-b-d&q=j+h+patel+college+davangere#"
+                        target="_blank" class="text-light fs-4">
+                        <i class="bi bi-google"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary">
+
+            <!-- Copyright -->
+            <div class="text-center pb-3">
+                © 2026 J H Patel College | BCA Department
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
