@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>College Web Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        .card-title {
+            padding: 20px;
+            font-size: 60px;
+            color: #4fc3f7;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+            font-family: 'Times New Roman', Times, serif;
+            animation: moveLeftRight 10s ease-in-out infinite;
+            background: linear-gradient(rgb(255, 0, 0), purple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-radius: 10px;
+        }
+
+        @keyframes moveLeftRight {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(10px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .card-img-overlay {
+            padding-top: 2000px;
+        }
+
+        .card-text {
+            color: #ffffff;
+            font-size: 34px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 30px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            padding-left: 20%;
+            text-shadow:
+                0 0 5px rgb(0, 140, 255),
+                0 0 10px rgb(0, 140, 255),
+                0 0 20px rgb(0, 140, 255),
+                0 0 40px rgb(0, 140, 255);
+
+        }
+
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 20px 0;
+        }
+
+        .text {
+            display: inline-block;
+
+            transform: translateX(-100);
+            font-size: 26px;
+            animation: moveLeft 18s linear infinite;
+        }
+
+
+        .neon {
+            color: #22d3ee;
+            text-shadow:
+                0 0 5px #22d3ee,
+                0 0 15px #22d3ee,
+                0 0 30px #0ea5e9;
+        }
+
+
+        .gradient {
+            background: linear-gradient(90deg, #f97316, #fde047, #22c55e);
+            font-weight: bold;
+        }
+
+
+        .glass {
+            color: #e5e7eb;
+
+            text-shadow:
+                0 0 5px brown,
+                0 0 10px brown,
+                0 0 20px brown,
+                0 0 40px brown;
+
+            padding: 10px 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(6px);
+        }
+
+
+        .matrix {
+            color: #22c55e;
+            font-family: monospace;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px #22c55e;
+        }
+
+
+        @keyframes moveLeft {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .clg {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            margin-left: 25%;
+            font-size: 24px;
+             word-spacing: 5px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+
+
+
+        .card-img {
+            height: 50vw;
+
+            border-radius: 0px 0px 70px 70px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-img:hover {
+            filter: brightness(0.75) contrast(1.2) sepia(0.6)hue-rotate(195deg) saturate(2);
+        }
+
+        .carousel-inner img {
+            height: 500px;
+            width: 70px;
+            border-radius: 20px;
+            border: 2px solid black;
+        }
+
+        #carouselExampleInterval {
+            margin: 200px;
+            margin-bottom: 100px;
+            margin-top: 100px;
+
+        }
+
+        .menu {
+            background: linear-gradient(left, blue, red);
+        }
+
+        .clearfix img {
+            margin: 0%;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+        }
+
+        .icon i {
+            transform: scale(1.2);
+            transition: 1.2;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+            transition: 1s;
+        }
+
+        .clearfix {
+            padding-top: 30px;
+            font-size: 30px;
+        }
+
+        .rounded {
+            background-color: #ffd166;
+        }
+
+        .jhp {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 1px solid white;
+            text-shadow: 2px 2px 6px rgb(248, 244, 244);
+        }
+
+        .pg {
+            text-shadow: #ffd166;
+        }
+
+
+        .text-box {
+            position: relative;
+            font-size: clamp(22px, 5vw, 42px);
+            font-weight: 700;
+            color: darkslateblue;
+            border: 5px solid rgb(209, 124, 39);
+            border-radius: 50%;
+
+            text-align: center;
+
+        }
+
+        .codeme {
+            position: relative;
+            font-size: clamp(22px, 5vw, 42px);
+            font-weight: 700;
+            color: whitesmoke;
+            text-align: center;
+            font-size: 24px;
+           
+
+        }
+
+
+
+        .codeme1 {
+            position: relative;
+            font-size: clamp(22px, 5vw, 42px);
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 10px;
+            text-shadow:
+                0 0 5px gold,
+                0 0 10px gold,
+                0 0 20px gold,
+                0 0 40px gold;
+
+
+        }
+
+        .codeme1:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            transform: scale(1.1);
+            border-radius: 10px;
+
+
+            transition: 1s;
+        }
+
+
+        .codeme2 {
+            position: relative;
+            font-size: clamp(22px, 5vw, 42px);
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 10px;
+
+            text-shadow:
+                0 0 5px blueviolet,
+                0 0 10px blueviolet,
+                0 0 20px blueviolet,
+                0 0 40px blueviolet;
+
+
+        }
+
+        .codeme2:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            transform: scale(1.1);
+            border-radius: 10px;
+
+
+            transition: 1s;
+        }
+
+
+        .codeme3 {
+            position: relative;
+            font-size: clamp(22px, 5vw, 42px);
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 10px;
+
+            text-shadow:
+                0 0 5px brown,
+                0 0 10px brown,
+                0 0 20px brown,
+                0 0 40px brown;
+
+
+        }
+
+        .codeme3:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            transform: scale(1.1);
+            border-radius: 10px;
+
+
+            transition: 1s;
+        }
+
+
+        .codeme4 {
+            position: relative;
+            font-size: clamp(22px, 5vw, 42px);
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 10px;
+
+
+            text-shadow:
+                0 0 5px red,
+                0 0 10px red,
+                0 0 20px red,
+                0 0 40px red;
+
+
+        }
+
+        .codeme4:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            transform: scale(1.1);
+            border-radius: 10px;
+
+
+            transition: 1s;
+        }
+
+
+        .codeme5 {
+            position: relative;
+            font-size: clamp(22px, 5vw, 42px);
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 10px;
+
+
+            text-shadow:
+                0 0 5px greenyellow,
+                0 0 10px greenyellow,
+                0 0 20px greenyellow,
+                0 0 40px greenyellow;
+
+
+        }
+
+        .codeme5:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            transform: scale(1.1);
+            border-radius: 10px;
+
+
+            transition: 1s;
+        }
+
+
+        .codeme6 {
+            position: relative;
+            font-size: clamp(22px, 5vw, 42px);
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 10px;
+
+
+            text-shadow:
+                0 0 5px pink,
+                0 0 10px pink,
+                0 0 20px pink,
+                0 0 40px pink;
+
+
+        }
+
+        .clg2 {
+            display: none;
+        }
+
+        .codeme6:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            transform: scale(1.1);
+            border-radius: 10px;
+
+
+            transition: 1s;
+        }
+
+
+
+
+        .name {
+            width: 300px;
+            border-radius: 3px;
+            height: 6px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+        }
+
+
+
+        .text-box span {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            animation: textChange 6s infinite;
+            margin-top: 150px;
+        }
+
+        .text-box span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .text-box span:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        .text-box span:nth-child(3) {
+            animation-delay: 4s;
+        }
+
+        @keyframes textChange {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            10% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            30% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+
+
+
+
+
+
+        .show {
+            background-color: #4fc3f7;
+        }
+
+        .card-header {
+            background-color: black;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        @media(max-width:1050px) {
+            .card-title {
+                font-size: 40px;
+            }
+
+            .card-img {
+                height: 130vw;
+
+
+            }
+
+            .clg {
+                display: none;
+            }
+
+            .clg2 {
+                display: block;
+                padding-top: 10px;
+
+                float: left;
+                padding-right: 20px;
+
+                word-spacing: 5px;
+                font-family: 'Times New Roman', Times, serif;
+
+
+            }
+
+
+            .jhp {
+                width: 50px;
+                height: 50px;
+
+            }
+
+            .text-box {
+                padding-top: 0px;
+            }
+
+
+            .card-text {
+                font-size: 30px;
+                padding-left: 0;
+            }
+
+            .slide {
+                margin: 0;
+            }
+
+            .carousel-inner img {
+                height: 400px;
+                width: 100%;
+                border-radius: 20px;
+                margin: 0px;
+
+            }
+
+            #carouselExampleInterval {
+                margin: 0px;
+            }
+
+            .clearfix img {
+                width: 200px;
+                height: 200px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .clearfix {
+                padding-top: 30px;
+                font-size: 20px;
+            }
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top " style="height: 120px;">
+        <div class="container-fluid">
+            <img src="jh-patel.jpg" class="jhp" alt="...">
+            <a class="navbar-brand" href="#">
+                <p class="clg">J H Patel Institute of Management and Technology</p>
+            </a>
+            <a class="navbar-brand" href="#">
+                <p class="clg2">J.H.Patel College davangere</p>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Smart Campus</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="about.html">About Us</a>
+                            <a class="nav-link" href="faculty.html">Faculty</a>
+                            <a class="nav-link" href="Placements.html">Placements</a>
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Notices
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="">Student Corner</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="timetable.html">Time Table</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="lib.html">Library</a></li>
+                                <li><a class="dropdown-item" href="event.html">Events</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="card " style="background: linear-gradient(to left,red,blue);">
+        <img src="college.jpeg" class="card-img" alt="...">
+        <div class="card-img-overlay" style="padding-top: 100px;background: rgba(255, 255, 255, 0.5);">
+            <h5 class="card-title" style="padding-top: 80px;">BCA Student Portal</h5>
+
+
+
+            <div class="text-box">
+                <span>"Stay focused, your goal is near."</span>
+                <span>"Learning now builds a strong future."</span>
+                <span>"Don’t stop until you are proud"</span>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div>
+            <div class="marquee">
+                <span class="text glass">
+                    Web Development • Backend Logic • APIs • System Design • Debug • Optimize • Build Projects • Learn
+                    Every Day • Data Structures • Algorithms • Problem Solving • Competitive Coding
+
+                </span>
+                <span class="text glass">
+                    Web Development • Backend Logic • APIs • System Design • Debug • Optimize • Build Projects • Learn
+                    Every Day • Data Structures • Algorithms • Problem Solving • Competitive Coding
+
+                </span>
+
+            </div>
+            <p class="codeme">Programming Languages</p>
+            <div class="code" style="display: flex;justify-content: center;gap: 30px;">
+                <i class="bi bi-filetype-html codeme1"></i>
+                <i class="bi bi-filetype-java codeme2"></i>
+                <i class="bi bi-filetype-js codeme3"></i>
+                <i class="bi bi-filetype-py codeme4"></i>
+                <i class="bi bi-filetype-css codeme5"></i>
+
+
+
+                <i class="bi bi-filetype-php codeme6"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!---Hard work today creates success tomorrow.
+Stay focused, your goal is near.
+Learning now builds a strong future.
+Don’t stop until you are proud.
+Small efforts lead to big achievements.-->
+
+    <div class="p-3 mb-2 menu">
+
+        <div class="card text-center shadow-lg p-3 mb-5  rounded show" style="margin: 10px;background-color: #ffd166;">
+            <div class="card-header"
+                style="background-color: lightseagreen;font-weight: bold;font-size: 24px;  color: #ffffff;box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);border-radius: 30px;">
+                BCA Department – J H Patel College
+
+                <div class="card-body" style="font-size: 20px;color: black;">
+                    The Bachelor of Computer Applications (BCA) department
+                    at J H Patel College offers a structured academic program aligned with university standards. The
+                    department provides a supportive learning atmosphere with access to computer labs, academic
+                    resources, and guidance from qualified faculty.
+                </div>
+            </div>
+            <div class="card-footer text-body-secondary">
+
+            </div>
+        </div>
+
+
+
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="margin-top: 70px;">
+
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img3.jpeg" class="d-block w-100" alt="...">
+                    <h2 style="text-align: center;">Core programming languages </h2>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img2.jpeg" class="d-block w-100" alt="...">
+                    <h2 style="text-align: center;">Data Analysis </h2>
+
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img1.jpeg" class="d-block w-100" alt="...">
+                    <h2 style="text-align: center;">computing systems </h2>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 2px;">
+            <div class="col shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <div class="card h-100">
+                    <img src="img4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Why BCA Course</h6>
+                        Bachelor of Computer Applications (BCA) is an ideal program for students interested in computer
+                        science and information technology. It provides a strong academic foundation in computer
+                        applications and modern IT concepts. The course is structured according to university guidelines
+                        and focuses on theoretical knowledge supported by practical learning. BCA opens opportunities
+                        for higher education and careers in the IT and software industry, making it a popular choice for
+                        students seeking a professional degree in the technology field.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary"></small>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <div class="card h-100">
+                    <img src="img5.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Coding and technology</h6>
+                        Coding is an essential part of modern education and technology. It helps students understand how
+                        software and applications work and enables them to create solutions for real-world problems.
+                        Coding improves logical thinking, problem-solving ability, and accuracy. It is widely used in
+                        areas such as web development, software applications, data analysis, and automation. Learning
+                        coding prepares students for higher studies and careers in the IT industry and helps them adapt
+                        to rapidly changing technology.
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary"></small>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <div class="card h-100">
+                    <img src="img6.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Software developers </h6>
+                        Software developers are essential in today’s digital world because they design, develop, and
+                        maintain software applications used in daily life. From websites and mobile apps to banking
+                        systems and educational platforms, software developers ensure that technology works efficiently
+                        and securely. They help organizations automate processes, manage data, and improve services.
+                        With rapid growth in information technology and digital transformation, the demand for skilled
+                        software developers continues to increase across all industries.
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary"></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <h1>About JHP</h1>
+        <div class="clearfix">
+            <img src="ima10.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+
+            <p style="font-size: 20px;">
+             • J H Patel College provides a strong academic environment for students who are interested in computer
+                applications and coding. The college follows a structured university curriculum that helps students
+                understand both theoretical concepts and practical applications. With proper classroom teaching and
+                regular academic activities, students gain a clear foundation in programming and computer science.
+
+            </p>
+
+            <p style="font-size: 20px;">
+               • The college is well known for its experienced and supportive faculty members. Teachers guide students
+                patiently and explain coding concepts in a simple and understandable way. Faculty members encourage
+                students to ask questions, practice regularly, and improve their logical thinking, which helps students
+                gain confidence in learning programming languages.
+
+            </p>
+
+            <p style="font-size: 20px;">
+
+               • J H Patel College creates a positive learning atmosphere that motivates students to focus on coding and
+                academics. With computer laboratories, academic resources, and faculty guidance, students get good
+                exposure to practical learning. The institution supports continuous learning and helps students prepare
+                for higher education and careers in the IT field.
+
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Bootstrap Icons CDN (add in <head>) -->
+    <footer class="bg-dark text-light pt-4 mt-5">
+        <div class="container">
+            <div class="row text-center">
+
+                <!-- College Info -->
+                <div class="col-md-12 mb-3">
+                    <h5 class="text-uppercase">J.H.Patel Institute of Management and Technology</h5>
+                    <p>
+                        BCA Tech Hub is a dedicated portal for BCA students to access academic
+                        information and college updates.
+                    </p>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="col-md-12 mb-3 icon">
+                    <a href="https://www.instagram.com/jhpatel_college/?hl=en" target="_blank"
+                        class="text-light fs-4 me-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/Jhpatelcollegedvg/" target="_blank" class="text-light fs-4 me-3">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.google.com/search?client=firefox-b-d&q=j+h+patel+college+davangere#"
+                        target="_blank" class="text-light fs-4">
+                        <i class="bi bi-google"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary">
+
+            <!-- Copyright -->
+            <div class="text-center pb-3">
+                © 2026 J H Patel College | BCA Department
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <style>
+        #changingText {
+            font-size: 40px;
+            animation: fade 0.8s ease-in-out;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(20px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+    </style>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
